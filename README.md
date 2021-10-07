@@ -1,2 +1,2 @@
-# Innerve_IGDTUW
+# Innerve: Annual Tech Fest of IGDTUW
 
