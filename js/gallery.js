@@ -206,6 +206,3 @@ $('.circle').on('click', function (e) {
   //ping.play();
   tl.replay();
 });
-
-
-
