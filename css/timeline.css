@@ -170,7 +170,7 @@ a:hover {
 /* RESPONSIVE */
 @media screen and (max-width: 991px) {
 	body{
-		background-position-x: 1vw;
+		background-position-x: 4vw;
 		background-repeat: repeat-y;
 		background:cover;
 	}
