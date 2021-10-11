@@ -399,6 +399,7 @@ header .nav nav.open .showcase {
   }
   header .nav nav .menu .main-menu{
       width: 100vw;
+      z-index:10;
   }
 
 }
@@ -407,6 +408,10 @@ header .nav nav.open .showcase {
 
 
 {
+   header .nav nav .menu .main-menu{
+      width: 100vw;
+      z-index:10;
+  }
   .logo{
     height: 90px;
     margin-top: 25px;
@@ -425,6 +430,10 @@ header .nav nav.open .showcase {
 }
 
 @media only screen and (max-width: 768px) {
+   header .nav nav .menu .main-menu{
+      width: 100vw;
+      z-index:10;
+  }
   /* For mobile phones: */
   #nogap {
     margin-top:-880px;
@@ -748,6 +757,7 @@ body-footer {
     /* width: 100vw;
     height: 100vh; */
     display: flex;
+    z-index:5;
     justify-content: center;
     align-items: center;
     bottom: 0;
@@ -760,6 +770,7 @@ body-footer {
   }
   .mobile-footer .notice {
     display: none;
+    z-index:5;
     position: relative;
     top: 10px;
     left: -1000px;
