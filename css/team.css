@@ -35,7 +35,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #DE5D83;
 	--color-bg: #FFF5EE;
-	--color-link: #DE5D83;
 	--color-link-hover: #DE5D83;
 	--color-info: #DE5D83;
 	font-family: 'Buenard', serif;
@@ -130,7 +129,7 @@ main {
   margin-right:-100px;
 }
 
-.content {
+.fcontent {
 	position: relative;
   
 }
@@ -486,6 +485,10 @@ header .nav nav.open .showcase {
 .animate__slideInUp {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
+}
+.fcontent p a {
+  color: #fff;
+  box-shadow: 0 1px 0 0 #EF3340;
 }
 /* .fcontent {
   position: relative;
@@ -1272,6 +1275,7 @@ ul.accordion {
     background: #de5d83;
     flex-wrap: wrap;
     margin-bottom: 80px;
+    color:white;
   }
 
   .fcontent {

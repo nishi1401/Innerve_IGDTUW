@@ -107,6 +107,9 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+h2 {
+	 text-shadow: 3px 3px black;
+}
   #gap::before {
     content: "\a\a\a\a\a\a\a";
     white-space: pre;
