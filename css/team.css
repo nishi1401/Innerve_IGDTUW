@@ -35,11 +35,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #DE5D83;
 	--color-bg: #FFF5EE;
-	--color-link: #DE5D83;
 	--color-link-hover: #DE5D83;
 	--color-info: #DE5D83;
 	font-family: 'Buenard', serif;
 	min-height: 100vh;
+  overflow-x: hidden;
 
 	color: var(--color-text);
 	
@@ -125,11 +125,13 @@ a:focus {
 } */
 
 main {
-	position: relative;
+	position: absolute;
+  margin-right:-100px;
 }
 
-.content {
+.fcontent {
 	position: relative;
+  
 }
 
 /* Header */
@@ -150,12 +152,13 @@ main {
 	padding: 0;
 } */
 header {
-  z-index: 15;
+  z-index: 100;
   opacity: 0;
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 header .nav {
   position: fixed;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
@@ -168,6 +171,7 @@ header .nav {
   padding: 0 5vw;
 }
 header .nav .title {
+  z-index: 100;
   line-height: 80px;
   /* removed padding */
   /* padding: 0 120px; */
@@ -180,6 +184,7 @@ header .nav .toggle {
   /* position: absolute;
   margin: auto; */
   width: 46px;
+  z-index: 100;
   height: 46px;
   /* right: 120px;
   top: 0;
@@ -189,7 +194,6 @@ header .nav .toggle {
   align-items: center;
   z-index: 100;
   cursor: pointer;
-
 
 
 }
@@ -217,6 +221,7 @@ header .nav .toggle .bar:after {
 }
 header .nav .toggle.clicked .bar {
   background: transparent;
+
 }
 header .nav .toggle.clicked .bar:before, header .nav .toggle.clicked .bar:after {
   background: #000;
@@ -481,6 +486,10 @@ header .nav nav.open .showcase {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
+.fcontent p a {
+  color: #fff;
+  box-shadow: 0 1px 0 0 #EF3340;
+}
 /* .fcontent {
   position: relative;
   flex: 1;
@@ -522,7 +531,7 @@ svg text {
   font-size: 150px;
   font-weight: 700;
   stroke-width: 3;
- 
+ z-index:-1;
   animation: textAnimate 5s infinite alternate;
   
 }
@@ -620,6 +629,7 @@ svg text {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding-bottom: 10rem;
+  margin-left:100px;
 }
 
 .grid__item {
@@ -627,11 +637,13 @@ svg text {
 	justify-content: center;
 	margin: 0 0 10rem 0;
 	cursor: pointer;
+  
 }
 
 .box {
 	position: relative;
 	margin: 2rem;
+  
 }
 
 .box__title {
@@ -834,6 +846,7 @@ svg text {
 		padding: 3rem 3rem 15rem 3rem;
 		grid-row-gap: 2rem;
 		grid-template-columns: repeat(2,calc(100% / 2));
+    margin-left:10vw;
 	}
 	.grid__item {
 		margin: 0;
@@ -1039,9 +1052,11 @@ body-footer {
  
 } */
 .footer__desktop {
-  position: relative;
-  bottom: 0;
-  width: 100vw;
+   position: absolute;
+   left:0px;
+   width: 100vw;
+   z-index:-1;
+   bottom:-80vw;
 }
 
 ul.accordion {
@@ -1218,20 +1233,20 @@ ul.accordion {
     font-size: 40px;
   }
   .mobile-footer {
-    position: relative;
+    position: fixed;
     /* width: 100vw;
     height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index:-1;
-    bottom: 0;
+    bottom: 0px;
     margin-top: 20px;
     width: 100vw;
     /* height: 15vh; */
   }
   .mobile-footer .notice {
-    bottom: 0;
+    bottom: 0px;
     margin-top: 20px;
     width: 100vw;
     /* height: 15vh; */
@@ -1260,6 +1275,7 @@ ul.accordion {
     background: #de5d83;
     flex-wrap: wrap;
     margin-bottom: 80px;
+    color:white;
   }
 
   .fcontent {
