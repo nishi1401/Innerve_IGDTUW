@@ -3307,7 +3307,7 @@ div {
     display: none !important;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .dotted_hide{
         transform: scale(2);
         top: 45%;
@@ -3327,10 +3327,25 @@ div {
 
     .name p a{
         top: 75%;
-        font-size:25px;
+        font-size:20px;
     }
 
-}  
+    #welcomeMsgDesktop{
+        display: none;
+    }
+
+    #welcomeMsgMobile{
+        display: block;
+    }
+
+    .name_circle01{
+        display: none;
+    }
+
+    .name_circle02{
+        display: none;
+    }
+}   
 
 
 
