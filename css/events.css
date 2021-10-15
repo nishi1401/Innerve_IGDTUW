@@ -488,7 +488,7 @@ svg text {
 }
 
 #tt{
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -593,7 +593,7 @@ svg text {
   box-sizing: border-box;
   text-align: center;
   /* padding:15px; */
-  padding: 0 12px 0 12px;
+  padding: 0 10px 0 10px;
   z-index: -1;
   font-family: 'Roboto', sans-serif;
   border: 1px solid gray;
@@ -606,6 +606,7 @@ svg text {
     margin-bottom: 8px;
     margin-top: 30px;
     text-shadow: 2px 2px 4px pink;
+    font-size: 0.9em;
 }
 .info2{
     background: linear-gradient(to bottom, #DE5D83, #e787a4);
@@ -613,7 +614,8 @@ svg text {
     border-radius: 10px;
     box-shadow: 9px 9px 4px #f1b7b7;
     padding: 10px;
-    margin-top: 8px;
+    font-size: small;
+    margin-top: 10px;
     /* margin-bottom: 40px; */
     margin-bottom: 25px;
     border: 1px solid gray;
