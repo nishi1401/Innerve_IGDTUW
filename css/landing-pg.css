@@ -178,4 +178,8 @@ svg text {
     font-size: 2vw;
     text-shadow: 4px 4px #ffffff;
 	margin-left:3vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
   }
