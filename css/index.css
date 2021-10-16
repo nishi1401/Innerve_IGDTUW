@@ -1,6 +1,10 @@
 /*=================
 Basic style
 ==================*/
+#welcomeMsgMobile{
+    display: none;
+}
+
 html, body{
     position: relative;
     width: 100%;
@@ -787,7 +791,7 @@ orange circle
     left: 50%;
     transform: translate(-50%, -50%);
     color:#DE5D83;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -3307,7 +3311,7 @@ div {
     display: none !important;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .dotted_hide{
         transform: scale(2);
         top: 45%;
@@ -3327,10 +3331,25 @@ div {
 
     .name p a{
         top: 75%;
-        font-size:25px;
+        font-size:20px;
     }
 
-}  
+    #welcomeMsgDesktop{
+        display: none;
+    }
+
+    #welcomeMsgMobile{
+        display: block;
+    }
+
+    .name_circle01{
+        display: none;
+    }
+
+    .name_circle02{
+        display: none;
+    }
+}   
 
 
 
