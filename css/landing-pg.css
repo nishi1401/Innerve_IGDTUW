@@ -67,7 +67,7 @@ h2 {
 	 text-shadow: 6px 6px black;
   border-radius: 2rem;
   /*opacity:0.7;*/
-  font-weight: 100000;
+  font-weight: 100;
   font-family:'Verdana';
  text-align: center;
 	 transition: all 0.2s;
@@ -85,7 +85,7 @@ h2 {
 }
  @keyframes fontWeight {
 	 0%, 70%, 100% {
-		 font-weight: 100;
+		 font-weight: 1000;
 		 letter-spacing: 0.03em;
 	}
 	 20%, 50% {
@@ -109,6 +109,11 @@ h2 {
   /* For mobile phones: */
 h2 {
 	 text-shadow: 3px 3px black;
+   font-weight: bold;
+}
+h2:hover {
+	 font-weight: 1000;
+	 letter-spacing: -0.06em;
 }
   #gap::before {
     content: "\a\a\a\a\a\a\a";
@@ -173,4 +178,8 @@ svg text {
     font-size: 2vw;
     text-shadow: 4px 4px #ffffff;
 	margin-left:3vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
   }
