@@ -13,6 +13,39 @@ ul {
 	text-decoration: underline;
 }
 
+.informal_info{
+	font-weight:1000;
+	background-color:#DE5D83;
+	padding:10px;
+	color:#eee;
+	font-size:17px;
+}
+
+.ece_info{
+	font-weight:1000;
+	background-color:#0004d6;
+	padding:10px;
+	color:#eee;
+	font-size:17px;
+}
+
+.cs-it_info{
+	font-weight:1000;
+	background-color:#722f37;
+	padding:10px;
+	color:#eee;
+	font-size:17px;
+}
+
+.mae_info{
+	font-weight:1000;
+	background-color:#9c06aa;
+	padding:10px;
+	color:#eee;
+	font-size:17px;
+}
+
+
 body {
 	 width: 100vw;
   height: 100vh;
