@@ -563,8 +563,8 @@ svg text {
   #nogap {
     margin-top:-880px;
   }
-
 }
+
 
 
 
@@ -679,7 +679,6 @@ svg text {
 	left: 0;
 	height: 0;
 	overflow: hidden;
-	white-space: nowrap;
 	-webkit-text-stroke: 0;
 	text-stroke: 0;
 	-webkit-text-fill-color: #DE5D83;
@@ -724,6 +723,7 @@ svg text {
 	max-width: 100%;
 	transition: filter 0.3s;
 	pointer-events: none;
+  width: 50vw;
 }
 
 /* .grid__item:hover .box__img:not(.box__img--original) {
@@ -942,7 +942,7 @@ svg text {
 	}
 
   .box__img{
-    width:100vh;
+    width:50vh;
   }
   .teamcontent{
 	position: relative;
@@ -1344,12 +1344,34 @@ ul.accordion {
     stroke-width :1; 
     font-weight: 680;
   }
+  .box__title-inner {
+	
+	font-size: 3.15rem;
+	
+}
+.grid {
+    
+    margin-left: 50px;
+}
 }
 @media screen and (max-width: 400px) {
  svg text{
     font-size: 20px;
     stroke-width :1; 
     font-weight: 550;
+  }
+  .grid {
+  margin-left:40px;
+}
+.box__title-inner {
+	
+	font-size: 3.15rem;
+	
+}
+.mobile-footer .fcontent {
+    
+    width: 110vw;
+  
   }
 }
 @media screen and (max-width: 300px) {
