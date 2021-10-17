@@ -856,6 +856,7 @@ div {
     font-family: 'Anton', sans-serif;
     transform: translate(-50%, -50%);
     mix-blend-mode: screen;
+    font-weight: bolder;
 }
 @media (max-width:800px) {
     #ui .text {
